@@ -1,0 +1,7 @@
+<form action="/blog" method="post">
+    <div><label>Title</label><input type="text" name="title"></input></div>
+    <div><label>Content</label><input type="text" name="content"></input></div>
+    <div><label>Author</label><input type="text" name="author"></input></div>
+    <div><label>Date</label><input type="text" name="date"></input></div>
+    <div><input type="submit"/></div>
+</form>

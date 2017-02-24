@@ -1,0 +1,10 @@
+<% import com.antocoding.blackcat.models.Article %>
+<% import org.squeryl.Query %>
+
+<%@ val article:Article %>
+
+
+<h3><%= article.title %> <%= article.content %> <small>date <%= article.date.toString %></small></h3>
+
+<h2>&#8220;<%= article.author %>&#8221;</h2>
+

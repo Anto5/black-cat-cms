@@ -1,0 +1,13 @@
+<% import com.antocoding.blackcat.models.Article %>
+<% import org.squeryl.Query %>
+
+<%@ val article:Article %>
+
+
+
+
+<form action="/blog/<%= article.id %>" method=post>
+    <div><label>Title</label><input type="text" maxlength="512" name="title" value="<%= article.title %>"></input></div>
+    <div><label>Content</label><input type="text" maxlength="512" name="content" value="<%= article.content %>"></input></div>
+    <div><input type="submit"/></div>
+</form>

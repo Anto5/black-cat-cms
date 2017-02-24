@@ -1,0 +1,7 @@
+<% import com.antocoding.blackcat.models.Article %>
+<% import org.squeryl.Query %>
+<%@ val allArticles:Query[Article] %>
+
+#for(article <- allArticles.toList)
+  <h2><%= article.title %></h2>
+#end
